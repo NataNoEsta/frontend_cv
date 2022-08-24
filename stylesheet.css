@@ -1,0 +1,44 @@
+body {
+    background-color: aliceblue;
+    color:darkslategray;
+    font-family: 'Inconsolate', Arial, serif;
+    font-weight: 200;
+}
+.title {
+    color: coral;
+    font-size: 2rem;
+}
+
+.subtitle {
+    color: aquamarine;
+    font-size: 1.5rem;
+
+}
+section {
+    display: block;
+    position: relative;
+    width: 760px;
+    padding: 10px;
+}
+.header-wrapper {
+    padding: 20px;
+    margin-top:0;
+    align-content: space-between;
+}
+.header {
+    background-color: azure;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation {
+    display: inline-block;
+    background-color: bisque;
+    padding: auto;
+}
+.footer {
+    bottom:0;
+    margin-left: auto;
+    margin-right: auto;
+}
