@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
   </head>
 
   <body>
@@ -15,26 +15,42 @@
         <div class="header-wrapper">
             <div class="header-image">
               <h1 class="title">Curriculum</h1>
-              <h2 class="subtitle">Mi curriculum</h2>
             </div>  
-        </div> 
-    </section>
-
-    <section class="navigation">
-      <navbar class="nav">
-        <ol class="nav-item">
-            <li class="nav-link">hola</li>
-            <li class="nav-link">hola2</li>
-        </ol>
-      </navbar>
-    </section>
+        </div>
+        <h2 class="subtitle">Mi curriculum</h2>
+        <navbar class="nav"> 
+          <ul class="nav-item">
+            <li class="nav-link"><a href="#">Objetivos y habilidades</a></li>
+              <li class="nav-link"><a href="/2.html">Formaicón</a></li>
+              <li class="nav-link"><a href="/3.html">Experiencia</a></li>
+              <li class="nav-link"><a href="/4.html">Proyectos</a></li>
+          </ul>
+        </navbar>
+  </section>
 
     <section class="main">
-      <article class="cuerpo">
-        <h2>Experiencia</h2>
-      </article>
+      <div class="cuerpo" id="1">
+        <h2 class="subtitle">Experiencia</h2>
+        <div id="cont">
+        </div>
+      </div>
+
+      <div class="cuerpo2" id="2">
+        <h2 class="subtitle">Ayaya</h2>
+      </div>
+      
     </section>
 
+  <script>
+    function newDivs() {
+      var newDiv = document.createElement("div");
+      var newContent = document.createTextNode("Hola! Qué onda?");
+      newDiv.appendChild(newContent);
+      var currentDiv = document.getElementById("1");
+      document.body.insertBefore(newDiv, currentDiv);
+    }
+    newDivs();
+    </script>
   </body>
 
   <footer>
