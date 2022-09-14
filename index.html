@@ -11,37 +11,60 @@
   </head>
 
   <body>
-    <section class="header">
-        <div class="header-wrapper">
-            <div class="header-image">
-              <h1 class="title">Curriculum</h1>
-            </div>  
-        </div>
-        <h2 class="subtitle">Mi curriculum</h2>
-        <navbar class="nav"> 
-          <ul class="nav-item">
-            <li class="nav-link"><a href="#">Objetivos y habilidades</a></li>
-              <li class="nav-link"><a href="/2.html">Formaicón</a></li>
-              <li class="nav-link"><a href="/3.html">Experiencia</a></li>
-              <li class="nav-link"><a href="/4.html">Proyectos</a></li>
+
+    <header>
+      <div id="logo"><span class="material-icons">terminal</span> Nata Berger</div>
+      <nav class="navbar">  
+        <ul>
+          <li><a href="index.html">Presentación</a>
+          <li><a href="datos.html">Datos personales</a>
+          <li><a href="formacion.html">Formación</a>
+          <li><a href="objetivos.html">Objetivos</a>
+        </ul>
+      </nav>
+    </header>
+<!-- 
+    <section>
+      <strong id="subtitle">Demonstration of a simple page layout using HTML5 tags: header, nav, section, main, article, aside, footer, address.</strong>
+    </section> -->
+    <section id="pageContent">
+      <main role="main">
+        <article id="about">
+          <h2 class="title">Sobre mí</h2>
+          <p>Soy estudiante de desarrollo web, como parte del programa Argentina Programa y del Informatorio (Chaco).</p>
+        </article>
+
+        <article id="formacion">
+          <h2 class="title">Formación y experiencia</h2>
+          <ul>
+            <li>Tecnicatura superior en Tecnología de los Alimentos (IESVA - 2018-2021)</li>
+            <li>Desarrollo Web (Informatorio) Tecnologías: Python, MySQL, Django</li>
+            <li>Desarrollo fullstack (Argentina Programa). Tecnologías: HTML, CSS, JavaScript, Typescript, AngularJS</li>
           </ul>
-        </navbar>
-  </section>
+        </article>
 
-    <section class="main">
-      <div class="cuerpo" id="1">
-        <h2 class="subtitle">Experiencia</h2>
-        <div id="cont">
+        <article id="objetivos">
+          <h2 class="title">Objetivos</h2>
+          <p>Obtener mi primer empleo IT para poner a prueba mis conocimientos y continuar mi camino de formación en las tecnologías de desarrollo.</p>
+        </article>
+
+      </main>
+
+      <aside class="aside" id="aside">
+        <div><img class="profile" src="imgs/profile.jpg" alt="profiel pic"></div>
+        <div>
+          <article class="contacto">
+            <h4>Dni: xxxxxxxx</h4>
+            <h4>cel. xxxxxxxxxx: </h4>
+            <h4>residencia: Chaco, Argentina</h4>
+          </article>
         </div>
-      </div>
-
-      <div class="cuerpo2" id="2">
-        <h2 class="subtitle">Ayaya</h2>
-      </div>
-      
+      </aside>
     </section>
+  
+  </body>
 
-  <script>
+  <!-- <script>
     function newDivs() {
       var newDiv = document.createElement("div");
       var newContent = document.createTextNode("Hola! Qué onda?");
@@ -50,7 +73,7 @@
       document.body.insertBefore(newDiv, currentDiv);
     }
     newDivs();
-    </script>
+    </script> -->
   </body>
 
   <footer>
@@ -58,3 +81,5 @@
       <span>See you</span>
     </div>
   </footer>
+
+</html>
