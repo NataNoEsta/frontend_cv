@@ -1,68 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Curriculum</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-  </head>
 
-  <body>
+<head>
+  <title>CV Natasha</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <script src=""></script>
+</head>
 
-    <header>
-      <div id="logo"><span class="material-icons">terminal</span> Nata Berger</div>
-      <nav class="navbar">  
-        <ul>
-          <li><a href="index.html">Presentación</a>
-          <li><a href="datos.html">Datos personales</a>
-          <li><a href="formacion.html">Formación</a>
-          <li><a href="objetivos.html">Objetivos</a>
-        </ul>
-      </nav>
-    </header>
-<!-- 
+<body>
+
+  <header>
+    <a href="index.html"><div id="logo"><span class="material-icons">terminal</span> Nata Berger</div></a>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Presentación</a>
+        <li><a href="datos.html">Datos personales</a>
+        <li><a href="formacion.html">Formación</a>
+        <li><a href="objetivos.html">Objetivos</a>
+      </ul>
+    </nav>
+  </header>
+  <!-- 
     <section>
       <strong id="subtitle">Demonstration of a simple page layout using HTML5 tags: header, nav, section, main, article, aside, footer, address.</strong>
     </section> -->
-    <section id="pageContent">
-      <main role="main">
-        <article id="about">
-          <h2 class="title">Sobre mí</h2>
-          <p>Soy estudiante de desarrollo web, como parte del programa Argentina Programa y del Informatorio (Chaco).</p>
+  <section id="pageContent">
+    <main role="main">
+      <article id="about">
+        <h2 class="title">Sobre mí</h2>
+        <p>Soy estudiante de desarrollo web, como parte del programa Argentina Programa y del Informatorio (Chaco).</p>
+      </article>
+
+      <article id="formacion">
+        <h2 class="title">Formación y experiencia</h2>
+        <ul>
+          <li>Tecnicatura superior en Tecnología de los Alimentos</li>
+          <li>Desarrollo Web (Informatorio) </li>
+          <li>Desarrollo fullstack (Argentina Programa) </li>
+        </ul>
+      </article>
+
+      <article id="objetivos">
+        <h2 class="title">Objetivos</h2>
+        <p>Obtener mi primer empleo IT para poner a prueba mis conocimientos y continuar mi camino de formación en las
+          tecnologías de desarrollo.</p>
+      </article>
+
+    </main>
+
+    <aside class="aside" id="aside">
+      <div><img class="profile" src="imgs/profile.jpg" alt="profiel pic"></div>
+      <div>
+        <article class="contacto">
+          <h4>Natasha Berger</h4>
+          <h4>Cel.: (+54) 3735506951</h4>
+          <h4>Residencia: Chaco, Argentina</h4>
         </article>
+      </div>
+    </aside>
+  </section>
 
-        <article id="formacion">
-          <h2 class="title">Formación y experiencia</h2>
-          <ul>
-            <li>Tecnicatura superior en Tecnología de los Alimentos (IESVA - 2018-2021)</li>
-            <li>Desarrollo Web (Informatorio) Tecnologías: Python, MySQL, Django</li>
-            <li>Desarrollo fullstack (Argentina Programa). Tecnologías: HTML, CSS, JavaScript, Typescript, AngularJS</li>
-          </ul>
-        </article>
 
-        <article id="objetivos">
-          <h2 class="title">Objetivos</h2>
-          <p>Obtener mi primer empleo IT para poner a prueba mis conocimientos y continuar mi camino de formación en las tecnologías de desarrollo.</p>
-        </article>
-
-      </main>
-
-      <aside class="aside" id="aside">
-        <div><img class="profile" src="imgs/profile.jpg" alt="profiel pic"></div>
-        <div>
-          <article class="contacto">
-            <h4>Dni: xxxxxxxx</h4>
-            <h4>cel. xxxxxxxxxx: </h4>
-            <h4>residencia: Chaco, Argentina</h4>
-          </article>
-        </div>
-      </aside>
-    </section>
-  
-  </body>
 
   <!-- <script>
     function newDivs() {
@@ -74,12 +78,11 @@
     }
     newDivs();
     </script> -->
-  </body>
-
-  <footer>
-    <div class="foot">
-      <span>See you</span>
-    </div>
-  </footer>
+</body>
+<footer>
+  <div class="foot">
+    <span>See you</span>
+  </div>
+</footer>
 
 </html>
